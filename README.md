@@ -70,11 +70,8 @@ For the frontend, I used Dash Plotly. Libraries used include Dash Bootstrap Comp
 
 3. Constraints (SQL): In the comments table there are contraints on various fields.  For example, the num_likes field has a default value of 0.  Additionally, the id field has the PRIMARY_KEY constraint. 
 
-<h2>Extra-Credit Capabilities</h2>
+4. Multi-database querying:  The widgets that display top faculty and top publications use multi-database querying.  The keyword drop down list in generated from querying MySQL.  The result of the dropdown selection is then used to query Neo4j and MongoDB.
 
-1. Multi-database querying:  The widgets that display top faculty and top publications use multi-database querying.  The keyword drop down list in generated from querying MySQL.  The result of the dropdown selection is then used to query Neo4j and MongoDB.
-
-2. Data expansion: An additional 'comments' dataset has been provided.  This additional table is useful because it allows users to interact by leaving comments on the page and liking eachother's comments.
 
 <h2>Contributions</h2> 
 
