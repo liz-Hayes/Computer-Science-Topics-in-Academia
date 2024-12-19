@@ -1,10 +1,13 @@
 <h1>Computer Science Keyword Explorer</h1>
-<h4>This project was completed as part of CS 411 - Database Systems at the University of Illinois Urbana-Champaign </h4>
+
 <h2>Purpose</h2>
 The purpose of this application is to allow students to explore topics in Computer Science.  The users of this dashboard could be potential students who want to compare areas of computer science and find the best universities to apply to based on their interests.  This dashboard will give them a great starting place to inform their decision.
 
 
 ![Computer Science Keyword Explorer App](https://github.com/liz-Hayes/Computer-Science-Topics-in-Academia/blob/main/images/app.PNG)\
+
+
+Note: This project was completed as part of CS 411 - Database Systems at the University of Illinois Urbana-Champaign. Original datasets and instructions to create MySQL, MongoDB, and Neo4j databases are not been provided.
 
 <h2>Demo</h2>
 [Computer Science Keyword Explorer Demo Video ](https://mediaspace.illinois.edu/media/t/1_jg8kgvib)
@@ -15,7 +18,7 @@ The purpose of this application is to allow students to explore topics in Comput
 1. Clone the repository
 
 ```
-git clone https://github.com/CS411DSO-SP24/ElizabethHayes.git
+git clone https://github.com/liz-Hayes/Computer-Science-Topics-in-Academia.git
 ```
 
 2. Install necessary packages:
