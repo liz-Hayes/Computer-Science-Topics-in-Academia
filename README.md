@@ -4,7 +4,7 @@
 The purpose of this application is to allow students to explore topics in Computer Science.  The users of this dashboard could be potential students who want to compare areas of computer science and find the best universities to apply to based on their interests.  This dashboard will give them a great starting place to inform their decision.
 
 
-![Computer Science Keyword Explorer App](https://github.com/CS411DSO-SP24/ElizabethHayes/blob/main/images/app.PNG)\
+![Computer Science Keyword Explorer App](https://github.com/liz-Hayes/Computer-Science-Topics-in-Academia/blob/main/images/app.PNG)\
 
 <h2>Demo</h2>
 [Computer Science Keyword Explorer Demo Video ](https://mediaspace.illinois.edu/media/t/1_jg8kgvib)
@@ -36,7 +36,7 @@ python load_comments_table.py [PATH_TO_COMMENTS_CSV]
 **NOTE:** If MySQL server is using the --secure-file-priv option, then the comments.csv file must be uploaded from the directory specified by --secure-file-priv.
 
 4. Start Neo4j Database 
-![start neo4j](https://github.com/CS411DSO-SP24/ElizabethHayes/blob/main/images/start_neo4j.PNG)
+![start neo4j](https://github.com/liz-Hayes/Computer-Science-Topics-in-Academia/blob/main/images/start_neo4j.PNG)
 
 5. Change directories to the repository. In your terminal, run:
 
@@ -45,7 +45,7 @@ python load_comments_table.py [PATH_TO_COMMENTS_CSV]
 ```
 
 6. Follow link to see dash app
-![start app](https://github.com/CS411DSO-SP24/ElizabethHayes/blob/main/images/start_app.PNG)
+![start app](https://github.com/liz-Hayes/Computer-Science-Topics-in-Academia/blob/main/images/start_app.PNG)
 
 
 <h2>Usage</h2> 
@@ -54,7 +54,7 @@ Select a CS keyword from the drop down menu at the top of the page, or start typ
 <h2>Design</h2>
 The dashboard utilizes the MySQL, MongoDB, and Neo4j databases used throughout the semester.  Additionally, the dashboard uses a 'comments' table with the following schema:
 
-![comments table schema](https://github.com/CS411DSO-SP24/ElizabethHayes/blob/main/images/comments_table_schema.PNG)
+![comments table schema](https://github.com/liz-Hayes/Computer-Science-Topics-in-Academia/blob/main/images/comments_table_schema.PNG)
 
 The top of the page contains a dropdown with all the keywords from the dataset. Selecting a keyword, causes each widget to update.  Upon starting up the app, 'machine learning' is the default selected keyword. The first widget shows top universities for the keyword.  When the keyword is changed, MySQL is queried to display the top 5 univeristies for the keyword.  The universities are displayed, each with a 'See Faculty Button'.  Selecting this button for a university updates the 2nd widget which displays top faculty.  This widget uses Neo4j as its backend database to display top faculty for the selected keyword at the selected university.  If no university has been selected, the widget displays top faculty at the top university.  The third widget displays information about the top 5 most relevant publications to the keyword. This widget uses MongoDB as its backend.  The fourth widget queries SQL and displays the keyword popularity over time in a plotly express line graph.  The final two widgets are encompassed in the comments section.  The first widget adds comments to the MySQL 'comments' table. A user can type a comment into the input box.  When the submit button is pressed, the comment gets inserted into the database. All comments for the keyword are displayed.  The final widget allows users to update the comments by liking them. Selecting the like button on a comment increments the num_likes field in the MySQL database and updates the number of likes displayed on the app.
 
