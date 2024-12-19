@@ -1,4 +1,5 @@
 <h1>Computer Science Keyword Explorer</h1>
+<h2>This project was completed as part of CS 411 - Database Systems at the University of Illinois Urbana-Champaign </h2>
 <h2>Purpose</h2>
 The purpose of this application is to allow students to explore topics in Computer Science.  The users of this dashboard could be potential students who want to compare areas of computer science and find the best universities to apply to based on their interests.  This dashboard will give them a great starting place to inform their decision.
 
